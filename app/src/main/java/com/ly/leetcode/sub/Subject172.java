@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个整数 n，返回 n! 结果尾数中零的数量。
@@ -23,7 +23,7 @@ public class Subject172 implements Subjcet {
     @Override
     public void run() {
         int n = trailingZeroes(15);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
 

@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个正整数，输出它的补数。补数是对该数的二进制表示取反。
@@ -23,7 +23,7 @@ public class Subject476 implements Subjcet {
     @Override
     public void run() {
         int n = findComplement(2147483647);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     public int findComplement(int num) {

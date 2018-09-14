@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个非负整数 n，计算各位数字都不同的数字 x 的个数，其中 0 ≤ x < 10n 。
@@ -17,7 +17,7 @@ public class Subject357 implements Subjcet {
     public void run() {
 
         int n = countNumbersWithUniqueDigits(4);
-        LogUtil.e( "run:  " + n);
+        Log.e(TAG, "run:  " + n);
     }
 
     public int countNumbersWithUniqueDigits(int n) {

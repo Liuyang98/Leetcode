@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个非负整数数组，你最初位于数组的第一个位置。
@@ -28,7 +28,7 @@ public class Subject55 implements Subjcet {
     public void run() {
         boolean n = canJump(new int[]{1, 1, 0, 1});
 //        boolean n = canJump(new int[]{2, 3, 1, 1, 4});
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     public boolean canJump(int[] nums) {
@@ -41,7 +41,7 @@ public class Subject55 implements Subjcet {
             }
 
 
-            LogUtil.e( "canJump:  reach " + reach);
+            Log.e(TAG, "canJump:  reach " + reach);
         }
 
         return reach >= nums.length - 1;

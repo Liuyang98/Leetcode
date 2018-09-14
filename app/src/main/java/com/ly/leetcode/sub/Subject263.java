@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 编写一个程序判断给定的数是否为丑数。
@@ -27,7 +27,7 @@ public class Subject263 implements Subjcet {
     @Override
     public void run() {
         boolean b = isUgly(16);
-        LogUtil.e( "isUgly: " + b);
+        Log.e(TAG, "isUgly: " + b);
 
     }
 

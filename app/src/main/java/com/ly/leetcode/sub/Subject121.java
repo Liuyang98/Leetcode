@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
@@ -25,7 +25,7 @@ public class Subject121 implements Subjcet {
     @Override
     public void run() {
         int n = maxProfit(new int[]{2, 5, 7, 1, 9, 1});
-        LogUtil.e( "运算结果: " + n);
+        Log.e(TAG, "运算结果: " + n);
     }
 
     int maxProfit(int[] prices) {

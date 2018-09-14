@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class Subject120 implements Subjcet {
         }
 
         int n = minimumTotal(list);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
 
     }
 

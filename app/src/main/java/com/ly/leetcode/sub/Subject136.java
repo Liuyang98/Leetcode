@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
@@ -22,7 +22,7 @@ public class Subject136 implements Subjcet {
     @Override
     public void run() {
         int n = singleNumber(new int[]{2, 2, 1,4,5,5,4,1,8,6,6});
-        LogUtil.e( "run: " +n );
+        Log.e(TAG, "run: " +n );
     }
 
     public int singleNumber(int[] nums) {

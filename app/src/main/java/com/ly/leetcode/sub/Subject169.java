@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
@@ -19,7 +19,7 @@ public class Subject169 implements Subjcet {
     @Override
     public void run() {
         int n = majorityElement(new int[]{2, 2, 1, 1, 1, 2, 2});
-        LogUtil.e( "运算结果: " + n);
+        Log.e(TAG, "运算结果: " + n);
     }
 
 
@@ -37,7 +37,7 @@ public class Subject169 implements Subjcet {
                 } else { // 如果不相同，并且没有可以抵消的数
                     main = nums[i]; // 记录最后不可以抵消的数
 
-                    LogUtil.e( "majorityElement:   main = nums[i]; "+nums);
+                    Log.e(TAG, "majorityElement:   main = nums[i]; "+nums);
                 }
             }
         }

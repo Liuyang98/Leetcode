@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 数组的每个索n到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。
@@ -22,7 +22,7 @@ public class Subjcet746 implements Subjcet {
     @Override
     public void run() {
         int n = minCostClimbingStairs(new int[]{0, 2, 2, 1});
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     public int minCostClimbingStairs(int[] cost) {

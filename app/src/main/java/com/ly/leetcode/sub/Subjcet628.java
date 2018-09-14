@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ public class Subjcet628 implements Subjcet {
     @Override
     public void run() {
         int n = maximumProduct(new int[]{1, 2, 3, 4, 5});
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
 

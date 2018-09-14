@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 在柠檬水摊上，每一杯柠檬水的售价为 5 美元。
@@ -40,7 +40,7 @@ public class Subject860 implements Subjcet {
     @Override
     public void run() {
         boolean bool = lemonadeChange(new int[]{5, 5,5, 10, 20});
-        LogUtil.e( "run: " + bool);
+        Log.e(TAG, "run: " + bool);
     }
 
     public boolean lemonadeChange(int[] bills) {

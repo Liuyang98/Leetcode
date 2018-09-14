@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
@@ -28,7 +28,7 @@ public class Subject62 implements Subjcet {
     @Override
     public void run() {
         int n = uniquePaths(2, 3);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
 

@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.Arrays;
 
@@ -33,7 +33,7 @@ public class Subject896 implements Subjcet {
     @Override
     public void run() {
         boolean bool = isMonotonic(new int[]{3, 2, 1});
-        LogUtil.e( "run: " + bool);
+        Log.e(TAG, "run: " + bool);
     }
 
     private boolean isMonotonic(int[] A) {

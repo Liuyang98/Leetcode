@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 你和你的朋友，两个人一起玩 Nim游戏：桌子上有一堆石头，每次你们轮流拿掉 1 - 3 块石头。 拿掉最后一块石头的人就是获胜者。你作为先手。
@@ -20,7 +20,7 @@ public class Subject292 implements Subjcet {
     @Override
     public void run() {
         boolean bool = canWinNim(10);
-        LogUtil.e( "run: " + bool);
+        Log.e(TAG, "run: " + bool);
     }
 
     public boolean canWinNim(int n) {

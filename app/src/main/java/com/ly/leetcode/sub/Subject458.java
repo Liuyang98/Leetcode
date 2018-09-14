@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 有1000只水桶，其中有且只有一桶装的含有毒药，其余装的都是水。它们从外观看起来都一样。如果小猪喝了毒药，它会在15分钟内死去。
@@ -19,7 +19,7 @@ public class Subject458 implements Subjcet {
     @Override
     public void run() {
         int n = poorPigs(1000, 15, 60);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     public int poorPigs(int buckets, int minutesToDie, int minutesToTest) {

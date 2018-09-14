@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.HashSet;
 
@@ -32,7 +32,7 @@ public class Subject859 implements Subjcet {
     @Override
     public void run() {
         boolean bool = buddyStrings("bbbb", "aaaa");
-        LogUtil.e( "run: " + bool);
+        Log.e(TAG, "run: " + bool);
     }
 
 

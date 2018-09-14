@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个非负整数 num，反复将各个位上的数字相加，直到结果为一位数。
@@ -20,7 +20,7 @@ public class Subject258 implements Subjcet {
     public void run() {
 
         int n = addDigits(38);
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
 
     }
 

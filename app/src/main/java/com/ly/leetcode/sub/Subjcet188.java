@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Subjcet188 implements Subjcet {
     @Override
     public void run() {
         List<List<Integer>> list = generate(5);
-        LogUtil.e( "run: " + list.toString());
+        Log.e(TAG, "run: " + list.toString());
     }
 
     public List<List<Integer>> generate(int numRows) {

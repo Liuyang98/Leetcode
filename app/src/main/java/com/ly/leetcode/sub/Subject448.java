@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,7 +23,7 @@ public class Subject448 implements Subjcet {
     public void run() {
         List list = findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1});
 
-        LogUtil.e( "run: " + Arrays.toString(list.toArray()));
+        Log.e(TAG, "run: " + Arrays.toString(list.toArray()));
     }
 
     public List<Integer> findDisappearedNumbers(int[] nums) {

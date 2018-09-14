@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
@@ -47,7 +47,7 @@ public class Subject283 implements Subjcet {
         for (int n : ints) {
             sb.append(n + " , ");
         }
-        LogUtil.e( "数字 : " + sb);
+        Log.e(TAG, "数字 : " + sb);
 
     }
 }

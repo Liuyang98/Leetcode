@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ public class Subjcet338 implements Subjcet {
     @Override
     public void run() {
         int[] n = countBits(5);
-        LogUtil.e( "run: " + Arrays.toString(n));
+        Log.e(TAG, "run: " + Arrays.toString(n));
     }
 
     public int[] countBits(int num) {

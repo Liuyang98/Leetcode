@@ -1,7 +1,7 @@
 package com.ly.leetcode.sub;
 
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
@@ -23,7 +23,7 @@ public class Subject198 implements Subjcet {
     @Override
     public void run() {
         int n = rob(new int[]{2, 7, 9, 11, 1});
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     private int rob(int[] nums) {

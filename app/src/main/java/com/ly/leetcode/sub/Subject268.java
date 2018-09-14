@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 /**
  * 给定一个包含 0, 1, 2, ..., n 中 n 个数的序列，找出 0 .. n 中没有出现在序列中的那个数。
@@ -19,7 +19,7 @@ public class Subject268 implements Subjcet {
     @Override
     public void run() {
         int n = missingNumber(new int[]{3, 0, 1, 5, 4, 2});
-        LogUtil.e( "run: " + n);
+        Log.e(TAG, "run: " + n);
     }
 
     public int missingNumber(int[] nums) {

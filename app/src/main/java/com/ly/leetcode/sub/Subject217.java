@@ -1,6 +1,6 @@
 package com.ly.leetcode.sub;
 
-import com.ly.leetcode.util.LogUtil;
+import android.util.Log;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ public class Subject217 implements Subjcet {
     @Override
     public void run() {
         boolean bool = containsDuplicate(new int[]{1, 2, 3, 1});
-        LogUtil.e( "run: " + bool);
+        Log.e(TAG, "run: " + bool);
     }
 
 
