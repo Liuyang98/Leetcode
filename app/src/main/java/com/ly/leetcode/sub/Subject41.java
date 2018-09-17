@@ -30,30 +30,26 @@ public class Subject41 implements Subjcet {
 
     @Override
     public void run() {
-        int n = firstMissingPositive(new int[]{3, 9, 8, 2, 1});
-
+        int n = firstMissingPositive(new int[]{7, 8, 9, 11, 12});
         Log.e(TAG, "run: " + n);
     }
 
     public int firstMissingPositive(int[] nums) {
+        int length = nums.length;
+        int[] cnum = new int[length];
 
-        for (int i = 0; i < nums.length; i++)
-            if (nums[i] > nums.length-1) nums[i] = 0;
+        if (length == 1) return nums[0] == 1 ? 2 : 1;
 
+        for (int i = 0; i < length; i++)
+            if (nums[i] > length || nums[i] < 0) nums[i] = 0;
 
-        for (int i = 1; i < nums.length; i++) {
-            int t = nums[i];
-            nums[nums[i]] = nums[i];
-            nums[i] = t;
-        }
+        for (int i = 0; i < length; i++)
+            if (nums[i] > 0) cnum[nums[i] - 1] = nums[i];
 
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == 0) return i;
+        for (int i = 0; i < length; i++)
+            if (cnum[i] == 0) return ++i;
 
-        }
-
-
-        return nums.length;
+        return ++length ;
     }
 
 }
