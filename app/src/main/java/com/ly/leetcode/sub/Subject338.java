@@ -17,7 +17,7 @@ import java.util.Arrays;
  * 要求算法的空间复杂度为O(n)。
  * 你能进一步完善解法吗？要求在C++或任何其他语言中不使用任何内置函数（如 C++ 中的 __builtin_popcount）来执行此操作。
  */
-public class Subjcet338 implements Subjcet {
+public class Subject338 implements Subjcet {
     private static final String TAG = "Subjcet746";
 
     @Override

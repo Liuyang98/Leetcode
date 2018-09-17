@@ -19,7 +19,7 @@ import java.util.List;
  *  [1,4,6,4,1]
  * ]
  */
-public class Subjcet188 implements Subjcet {
+public class Subject188 implements Subjcet {
     private static final String TAG = "Subjcet628";
 
     @Override
