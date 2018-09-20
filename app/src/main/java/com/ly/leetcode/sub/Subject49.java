@@ -25,7 +25,7 @@ import java.util.Map;
  * 不考虑答案输出的顺序。
  */
 public class Subject49 implements Subjcet {
-
+    private static final String TAG = "Subject49";
     @Override
     public void run() {
         List<List<String>> n = groupAnagrams(new String[]{"chi", "nip", "lab", "mud", "fan", "yak", "kid", "lox", "joy", "rob", "cad", "hug", "ken", "oaf", "pus", "hos", "ton", "any", "sac", "mid", "nip", "ron", "tux", "set", "jug", "axe", "ago", "sob", "ode", "dot", "nit", "pug", "sue", "new", "rub", "sup", "ohs", "ski", "oaf", "don", "cob", "kin", "ark", "gay", "jay", "bur", "dot", "eat", "rca", "wad", "maj", "luz", "gad", "dam", "eon", "ark", "del", "sin", "tat"});
