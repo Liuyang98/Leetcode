@@ -26,7 +26,7 @@ import java.util.Map;
  */
 public class Subject49 implements Subjcet {
 
-    private static final String TAG = "Subject1";
+    private static final String TAG = "Subject49";
 
     @Override
     public void run() {
