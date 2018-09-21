@@ -3,8 +3,7 @@ package com.ly.leetcode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ly.leetcode.sub.Subject49;
-
+import com.ly.leetcode.sub.Subject141;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new Subject49().run();
+        new Subject141().run();
 
     }
 }
