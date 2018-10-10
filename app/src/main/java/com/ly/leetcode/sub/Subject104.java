@@ -32,7 +32,6 @@ public class Subject104 implements Subjcet {
 
     public int maxDepth(TreeNode root) {
         bianli(root, 1);
-
         return max;
     }
 
